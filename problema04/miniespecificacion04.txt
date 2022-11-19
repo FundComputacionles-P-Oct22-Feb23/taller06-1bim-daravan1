@@ -1,0 +1,41 @@
+1-Inicio
+
+2-contador, i[0, n] <-- 1
+3-nombre, x(30)[{a-z},{A-Z},{BS}]
+4-posicion, x(30)[{a-z},{A-Z},{BS}]
+5-edad, i[0, n]
+6-estatura, d[0, n]
+7-mensaje, x(500)[{a-z},{A-Z},{BS},{-},{,}] <-- ""
+8-promedio_edades, d[0,n]
+9-promedio_estaturas, d[0, n]
+10-bandera, l <-- true
+11-opcion, x(1)[{A-Z}]
+
+12-Mientras bandera == true entonces
+13-         Escribir "Ingrese el nombre del jugador"
+14-         Leer nombre
+15-         Escribir "Ingrese la posicion del jugador"
+16-         Leer posicion
+17-         Escribir "Ingrese la edad del jugador"
+18-         Leer edad
+19-         Escribir "Ingrese la estatura del jugador en metros"
+20-         Leer estatura
+21-         mensaje <-- mensaje + contador + "." + " " + "-" + nombre + "-" + ","
+22-                     + " edad" + edad + "estatura" + estatura + "\n"
+23-         promedio_edades <-- promedio_edades + edades
+24-         promedio_estatura <-- promedio_estatura + estatura
+25-         contador <-- contador + 1
+26-         Escribir "Quiere ingresar mas jugadores? Ingrese N para terminar"
+27-         Leer opcion
+28-         Si opcion == "N" entonces
+29-                   bandera <-- false 
+30-         Fin Si
+31-Fin Mientras
+
+30-promedio_edades <-- promedio_edades / contador
+31-promedio_estatura <-- promedio_estatura / contador
+
+32-Escribir mensaje
+33-Escribir "Promedio de edades: " + promedio_edades + "\n"
+34-Escribir "Promedio de estaturas: " + promedio_estaturas + "\n"
+35-Fin

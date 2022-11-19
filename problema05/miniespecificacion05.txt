@@ -1,0 +1,21 @@
+1-Inicio
+
+2-contador, i[0, n] <-- 1
+3-nombre, x(20)[{a-z},{A-Z},{BS}]
+4-promedio, d[0, n]
+5- mensaje, x(500)[{a-z},{A-Z},{BS}] <-- ""
+
+6-Mientras contador <= 4 entonces
+7-         Escribir "Ingrese el nombre del estudiante"
+8-         Leer nombre
+9-         Escribir "Ingrese el promedio del estudiante"
+10-        leer promedio
+11-        Si promedio < 7 entonces
+12-           mensaje <-- mensaje + nombre + contador + "\t" + promedio + "\t" + "Reprobado" + "\n"
+13-        Sino
+14-           mensaje <-- mensaje + nombre + contador + "\t" + promedio + "\t" + "Aprobado" + "\n"
+15-        contador <-- contador + 1
+16-Fin Mientras
+
+17-Escribir mensaje
+18-Fin

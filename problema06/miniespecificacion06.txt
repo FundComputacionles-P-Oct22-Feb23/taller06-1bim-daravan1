@@ -1,0 +1,29 @@
+1-Inicio
+
+2-nombre, x(25)[{a-z},{A-Z},{BS}]
+3-costo, i[0, n]
+4-tipo, i[0, n]
+5-contador, i[0, n] <-- 1
+6-precio, d[0, n]
+7-mensaje, x(100)[{a-z},{A-Z},{BS},{$}] <-- ""
+
+8-Mientras contador <= 7 entonces
+9-         Escribir "Ingrese el nombre del cliente"
+10-         Leer nombre
+11-        Escribir "Ingrese el costo de la computadora"
+12-        Leer costo
+13-        Escribir "Ingrese el tipo de cliente"
+14-        Leer tipo
+15-        Si tipo == 1 entonces
+16-               precio <-- costo - (costo/10)
+17-        Si tipo == 2 entonces
+18-               precio <-- costo - (costo/20)
+19-        Sino 
+20-             precio <-- costo
+21-        Fin Si
+22-        mensaje <-- mensaje + nombre + " tipo " + tipo + "," + " compra computadora con precio"
+23-                    + " $" + precio + "\n"
+24-        contador <-- contador + 1
+25-Fin Mientras
+26-Escribir mensaje
+27-Fin

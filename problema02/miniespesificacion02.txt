@@ -1,0 +1,13 @@
+1-Inicio
+2-contador1, i[0,n] <--5
+3-contador2, i[0, n] <--10
+4-mensaje, x(500)[{a-z},{A-Z},{BS}] <-- ""
+
+4-Mientras contador1 <= 30 and contador2 <=20 entonces
+5-         mensaje <-- mensaje + contador1 + "/" + contador2 + "\n"
+6-         contador1 <-- contador1 + 5
+7-         contador2 <-- contador2 + 2
+8-Fin Mientras
+
+9-Escribir mensaje
+10-Fin

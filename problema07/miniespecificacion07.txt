@@ -1,0 +1,15 @@
+1-Inicio
+
+2-contador, i[0, n] <-- 1
+3-serie, x(50)[{-1, 10},{/},{+}] <-- "-1"
+
+4-Mientras contador <= 9 entonces
+5-         Si contador MOD 2 == 0 entonces
+6-                     mensaje <-- mensaje + "/" + contador + "-1"
+7-         Caso contrario
+8-                     mensaje <-- mensaje + "/" + contador + "+1"
+9-         Fin Si
+10-        contador <-- contador + 1
+11-Fin Mientras
+12-Escribir serie + "/10"
+13-Fin
